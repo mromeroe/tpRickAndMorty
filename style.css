@@ -63,38 +63,6 @@ body{
     display: none;
 }
 
-/*MENU DESPLEGABLE*/
-
-@media only screen and (max-width: 768px) {
-
-.nav-menu {
-    display: none;
-}
-
-#menu-label {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-#menu:checked + .nav-menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 89px; 
-    left: 0;
-    background-color: #008000;
-    width: 100%;
-    box-shadow: 0 2px 5px #00000033;
-    text-align: center;
-}
-
-.nav-menu-item {
-    padding: 10px;
-    text-align: center;
-}
-}
-
 /*TOTAL PERSONAJE*/
 .total-personajes{
     color: #fff;
@@ -240,4 +208,47 @@ footer p{
 }
 .parafo{
     margin-top: 10px;
+    font-size: 14px;
 }
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        margin-right: auto; 
+    }
+    
+    .menu {
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    
+    #menu-label {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        order:3;
+        margin:0 10px;
+    }
+    
+    #menu:checked + .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 55px; 
+        left: 0;
+        background-color: #008000;
+        width: 100%;
+        box-shadow: 0 2px 5px #00000033;
+        text-align: center;
+    }
+    
+    .nav-menu-item {
+        padding: 10px;
+        text-align: center;
+    }
+    }
