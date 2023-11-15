@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="Rick and Morty">
+      <link rel="shortcut icon" href="./icono/rick-and-morty-31043.png" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,400;1,700&family=Jockey+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0abb6f8b08.js" crossorigin="anonymous"></script>
+      <title>Rick and Morty</title>
+  </head>
+  <body>
+    <header class="header">
+      
+          <div class="menu">
+            <a href="#" class="logo"><img src="./icono/rick-and-morty-31015 .png" height="50px" alt="Logo" class="logo">
+            </a>
+            <label id="menu-label" for="menu"><i class="fas fa-bars"></i></label>
+          </div>
+          <nav>
+            
+            <input type="checkbox" id="menu">
+            <ul class="nav-menu">
+            <li id="todos" class="nav-menu-item">Todos</li>
+            <li id="mujeres" class="nav-menu-item">Mujer</li>
+            <li id="hombres" class="nav-menu-item">Hombre</li>
+            <li id="sinGenero" class="nav-menu-item">SinGenero</li>
+            <li id="noSeSabe" class="nav-menu-item">NoSeSabe</li>
+            </ul>
+          </nav>
+        
+      </header>
+      <main>
+          <p class="total-personajes">Total de personajes <span id="total-personajes"></span></p>
+          <div id="raiz" class="personajes-container"></div>
+    
+          <div class="container-paginador">
+            <p>Pagina actual: <span id="pagina-actual"></span></p>
+            <p>Total de páginas: <span id="total-paginas"></span></p>
+    
+            <div class="pagination">
+              <button id="first-page" class="pagination-button" disabled><i class="fa-solid fa-backward-fast fa-2xl"></i></button>
+              <button id="prev-page" class="pagination-button" disabled><i class="fa-solid fa-circle-arrow-left fa-2xl"></i></button>
+              <button id="next-page" class="pagination-button" disabled><i class="fa-solid fa-circle-arrow-right fa-2xl"></i></button>
+              <button id="last-page" class="pagination-button" disabled><i class="fa-solid fa-backward-fast fa-rotate-180 fa-2xl"></i></button>
+          </div>
+        </main>
+
+        <script src="app.js"></script>
+
+      <footer>
+        <div class="footer-content">
+          <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=742727922"><i class="fab fa-facebook fa-2xl"></i></a>
+            <a href="https://github.com/mromeroe"><i class="fab fa-github fa-2xl"></i></a>
+            <a href="https://www.instagram.com/elmati87/"><i class="fab fa-instagram fa-2xl"></i></a>
+          </div>
+          <div class="parafo">
+          <p>&copy; 2023 Matias Romero. Todos los derechos reservados 🚀</p>
+        </div>
+        </div>
+      </footer>
+  </body>
+  </html>

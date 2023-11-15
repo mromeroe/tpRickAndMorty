@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    font-family: 'Jockey One', sans-serif;
+    background-image: url(./imagen/rick-and-morty-33908.jpg);
+    background-size: cover;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header{
+    background-color: #008000;
+    position: relative;
+    height: auto;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgb(0,0,0,0.2);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu{
+    width: auto;
+    display: flex;
+    margin-right: 10px;
+    list-style: none;   
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    width: max-content;
+    cursor:pointer;
+    padding: 8px 10px;
+}
+
+.nav-menu-item:hover{
+    background-color: #ffff00;
+    border-radius: 10Px;
+    box-shadow: 0 0 5px 5px #adff2f;
+}
+#menu{
+    display:none;
+}
+#menu-label{
+    display: none;
+}
+.nav-menu-cerrar{
+    display: none;
+}
+
+/*MENU DESPLEGABLE*/
+
+@media only screen and (max-width: 768px) {
+
+.nav-menu {
+    display: none;
+}
+
+#menu-label {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu:checked + .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 89px; 
+    left: 0;
+    background-color: #008000;
+    width: 100%;
+    box-shadow: 0 2px 5px #00000033;
+    text-align: center;
+}
+
+.nav-menu-item {
+    padding: 10px;
+    text-align: center;
+}
+}
+
+/*TOTAL PERSONAJE*/
+.total-personajes{
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/*MODELO DE CAJA*/
+main{
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* GENERAL*/
+.personajes-container {
+    list-style: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+.personajes-container a:hover{
+    box-shadow: #ffff00;
+    cursor: pointer;
+}
+
+/* TARJETA */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 5px auto;
+    padding: 10px;
+    max-width: 300px;
+    height: 480px;
+    background-color: #ffff00;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 10px #adff2f;
+    cursor: pointer;
+}
+
+.card-image {
+    flex: 1;    
+    overflow: hidden;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.2);
+    filter:sepia(90%);
+}
+
+.card-content {
+    max-height:max-content;
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-vermas {
+
+    margin: 10px 20px 10px 10px;
+    flex-direction: 1 1 auto;
+}
+
+.card-vermas a {
+    text-decoration: none;
+    background-color: #008000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.card-vermas a:hover {
+    background-color: #9acd32;
+}
+
+/*PAGINADOR*/
+
+.container-paginador{
+    text-align: center;
+    color: #ffffff;
+    margin: 60px; 
+}
+.container-paginador:disabled{
+    display: none;
+}
+
+.pagination-button{
+    width: 40px;
+    height: 40px;
+    background-color:#008000;
+    color: #fff;
+    cursor: pointer;
+}
+button:disabled {
+    background-color: #808080;
+    color: black;
+    cursor: not-allowed;
+}
+button:hover{
+    background-color: #adff2f;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #008000;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 5px #00000033;
+}
+footer p{
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons i {
+    margin: 0 15px;
+    border: 10px;
+}
+.icons i:hover{
+    color: #ffff00;
+    cursor: pointer;
+}
+.parafo{
+    margin-top: 10px;
+}
