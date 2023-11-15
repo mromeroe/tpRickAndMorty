@@ -50,8 +50,8 @@ const printData = (arr) => {
                 <img src=${personaje.image} alt="">
             </div>
             <div class="card-content">
-                <p>Nombre:${personaje.name}</p>
-                <p>Genero:${
+                <p>Nombre: ${personaje.name}</p>
+                <p>Genero: ${
                   personaje.gender === "Female"
                     ? "Mujer"
                     : "" || personaje.gender === "Male"
@@ -62,8 +62,8 @@ const printData = (arr) => {
                     ? "No se sabe"
                     : ""
                 }</p>
-                <p>Especies:${personaje.species}</p>
-                <p>Estado:${
+                <p>Especies: ${personaje.species}</p>
+                <p>Estado: ${
                   personaje.status === "Alive"
                     ? "Vivo"
                     : "" || personaje.status === "Dead"
@@ -72,8 +72,8 @@ const printData = (arr) => {
                     ? "No se sabe"
                     : ""
                 }</p>
-                <p>Origen:${personaje.origin.name}</p>
-                <p>Locacion:${personaje.location.name}</p>   
+                <p>Origen: ${personaje.origin.name}</p>
+                <p>Locacion: ${personaje.location.name}</p>   
             </div>
             <div class="card-vermas"><a href="https://rickandmortyapi.com/api/character?/${
               personaje.id
